@@ -1,0 +1,12 @@
+from tkinter import*
+window = Tk()
+window.title('Размещение виджетов')
+window.geometry('300x300')
+ramka1 = Frame(window, width = 200, height = 200, bg = 'blue', bd = 2)
+kn = Button(ramka1, text = 'Нажми меня', bg = 'red')
+kn.grid(column = 0, row = 0)
+kn2 = Button(ramka1, text = 'Нажми меня', bg = 'red')
+kn2.grid(column = 0, row = 1)
+ramka1.pack()
+kn1 = Button(window, text = 'Нажми здесь!', bg ='black', fg = 'white')
+kn1.pack()
